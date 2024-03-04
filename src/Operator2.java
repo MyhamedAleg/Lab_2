@@ -1,6 +1,6 @@
 public class Operator2 {
     public static void main(String[] args) {
-        int mounth = ;
+        int mounth =  1 ;
         switch (mounth) {
             case 1:
         case 2:
