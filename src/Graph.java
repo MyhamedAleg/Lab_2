@@ -1,8 +1,17 @@
+import java.util.Scanner;
+
 public class Graph {
     public static void main(String[] args) {
-        int x = 2;
-        int y = -2;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введіть координату x: ");
+        double x = scanner.nextDouble();
+
+        System.out.print("Введіть координату y: ");
+        double y = scanner.nextDouble();
+
         int quadrant;
+
         if (x > 0 && y > 0) {
             quadrant = 1;
         } else if (x < 0 && y > 0) {
@@ -16,6 +25,7 @@ public class Graph {
         }
 
         System.out.println("Точка знаходиться в " + quadrant + " квадранті");
-        }
-    }
 
+
+    }
+}

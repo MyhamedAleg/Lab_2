@@ -8,11 +8,16 @@ public class Choise {
     private static final Map<Integer, String> taskMap = new HashMap<>();
     static {
         taskMap.put(1, "Sqrt");
-        taskMap.put(2, "cycle");
-        taskMap.put(3, "Graph");
+        taskMap.put(2, "Graph");
+        taskMap.put(3, "cycle");
         taskMap.put(4, "Operator");
-        taskMap.put(5, "Operator2");
-        taskMap.put(6, "Operator3");
+        taskMap.put(5, "WeekdayType");
+        taskMap.put(6, "SeasonFinder");
+        taskMap.put(7, "DaysInMonth");
+        taskMap.put(8, "TextMenu");
+        taskMap.put(9, "LessonFinder");
+        taskMap.put(10, "QuarterHour");
+        taskMap.put(11, "ArithmeticMenu");
     }
 
     public static void main(String[] args) {
@@ -43,7 +48,8 @@ else{
                 // Виклик методу main класу завдання
                 Method method = cls.getMethod("main", String[].class);
                 method.invoke(null, new Object[]{new String[]{}});
-            } catch (Exception e) {
+            } catch (Exception e)
+            {
                 e.printStackTrace();
             }
         } else {
